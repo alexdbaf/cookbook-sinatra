@@ -8,5 +8,11 @@ configure :development do
 end
 
 get '/' do
-  'Hello world!'
+  erb :index, :layout => :layout
 end
+
+get '/about' do
+  erb :about
+end
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mAlessandro's Cookbook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.js'></script>
+  <link rel="stylesheet" href="style.css">
+<link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" >  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</head>
+<body class="grey lighten-4">
+<div class="container">
+  <h1 class="center">Alessandro's Italian Cookbook</h1>
+  <table class="striped bordered">
+    <theader>
+      <tr>
+        <th>k</th>
+        <th>d</th>
+      </tr>
+    </theader>
+    <tbody>
+      <% 5.times do |i|%>
+        <tr>
+          <td><%= i %></td>
+          <td><%= i + 1 %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= yield %>
+</div>
+
+<script>
+  $(function(){
+    Turbolinks.start();
+  })
+</script>
+</body>
+</html>
+
+
