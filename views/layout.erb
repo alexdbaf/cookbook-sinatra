@@ -9,27 +9,21 @@
 <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" >  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="grey lighten-4">
 <div class="container">
   <h1 class="center">Alessandro's Italian Cookbook</h1>
-  <table class="striped bordered">
-    <theader>
-      <tr>
-        <th>k</th>
-        <th>d</th>
-      </tr>
-    </theader>
-    <tbody>
-      <% 5.times do |i|%>
-        <tr>
-          <td><%= i %></td>
-          <td><%= i + 1 %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+  <div class="center">
+    <a class="waves-effect waves-light btn blue" href="/list">List</a>
+    <a class="waves-effect waves-light btn blue darken-1" href="/create">Create</a>
+    <a class="waves-effect waves-light btn blue darken-3" href="/search">Search</a>
+    <a class="waves-effect waves-light btn red darken-1" href="/save">Save</a>
+    <a class="waves-effect waves-light btn red darken-2" href="/quit">Quit</a>
+  </div><br><br>
+
   <%= yield %>
+
 </div>
 
 <script>

@@ -1,8 +1,10 @@
 h1{
     font-size: 48pt;
     font-weight: bolder;
+    font-variant: small-caps;
   }
 
 .about {
   font-size: 24px !important;
 }
+
