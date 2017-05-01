@@ -8,6 +8,6 @@ h1{
   font-size: 24px !important;
 }
 
-body{
-  background-image: images/fond.jpeg;
+body {
+  background: url(images/fond.jpeg) no-repeat cover fixed;
 }
