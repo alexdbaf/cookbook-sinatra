@@ -1,0 +1,20 @@
+<form action="" method="get">
+
+  <div class="input-field">
+    <input type="text" name="q">
+    <label for="">Your food ?</label>
+      <div class="input-field">
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+    </button>
+  </div>
+  </div>
+</form>
+<ul>
+  <% @description.each_with_index do |d,i| %>
+
+  <li><a style="color:black;text-decoration: none;" href="/search?id=<%= i %>&q=<%= @q %>"><%= d %></a></li>
+  <img src="<%= @recipe_image[i] %>" alt="">
+  <br>
+  <% end %>
+</ul>
